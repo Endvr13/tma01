@@ -12,9 +12,8 @@ type Toll = {
 };
 
 type TollItemProps = {
-    toll: Toll,
-    onCountUpdate: (count: number) => void;
-    onVehicleUpdate: (vehicle: string) => void;
-    
+    toll: Toll;
+    onAddToCart (toll: Toll, isActive: boolean) : void;
+    isActive: boolean;
     
 }
