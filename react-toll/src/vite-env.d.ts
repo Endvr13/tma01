@@ -17,3 +17,17 @@ type TollItemProps = {
     isActive: boolean;
     
 }
+
+type PaymentFormProps = {
+    isVisible: boolean;
+    onSave (paymentData: PaymentData) : void
+    totalCost: number;
+}
+
+type PaymentData = {
+    cardNumber: string;
+    cardholderName: string;
+    expirationDate: string;
+    cvv: string;
+    totalCost: number;
+}
