@@ -170,7 +170,7 @@ function App() {
   
   const handleSavePaymentData = (paymentData: PaymentData) => {
     // Perform actions with the saved payment data, such as passing to a backend API, for demonstration, displays the payment data in console
-    paymentData.totalCost = calculateTotalCost();
+    paymentData.totalCost = (Math.round(calculateTotalCost()* 100) /100);
 
     console.log('Payment data saved:', paymentData);
     setIsPaymentFormVisible(false);
